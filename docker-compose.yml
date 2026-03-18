@@ -6,7 +6,7 @@ services:
       - "8080:8080"
     environment:
       - OLLAMA_API_KEY=${OLLAMA_API_KEY}
-      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-https://ollama.com}
+      - - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-https://api.ollama.com}
       - OLLAMA_TEMPERATURE=${OLLAMA_TEMPERATURE:-0.7}
       - OLLAMA_MODEL_CLASSIFY=${OLLAMA_MODEL_CLASSIFY:-gemma3:4b}
       - OLLAMA_MODEL_SENTIMENT=${OLLAMA_MODEL_SENTIMENT:-ministral-3:3b}
